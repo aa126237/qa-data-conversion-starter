@@ -1,15 +1,17 @@
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        //Build a scanner
+        Data data1 = new Data(1024, "bytes", 100);
 
-        //Prompt and store double amount
+        Scanner input = new Scanner(System.in);
 
-        //Prompt and store String unit
+        System.out.println("Enter the amount data");
+        data1.setAmount(Double.valueOf(input.nextLine()));
 
-        //Prompt and store download speed (in megabits
+        System.out.println("Enter the unit");
+        data1.setUnit(input.nextLine());
 
-        //Build a Data object with these three values
-
-        //Print out the data Object with your toString();
+        System.out.println("Enter the download speed (in megabits)");
+        data1.setDownloadSpeed(Integer.valueOf(input.nextLine()));
     }
 }
